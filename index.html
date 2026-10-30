@@ -74,66 +74,84 @@ img{-webkit-user-drag:none;user-select:none}
 .project .dashboard-shell{margin-top:auto;overflow:hidden;border-radius:12px}
 .project .dashboard-shell+a{margin-top:0}
 .project .dashboard-shell .dashboard-watermark{font-size:clamp(11px,1.2vw,14px);color:rgba(255,255,255,.7)}
+
+/* Rodada 2: cases em etapas, galeria das landing pages e contato */
+.case-steps{margin:0 0 20px;display:grid;gap:12px}.case-steps div{display:grid;gap:2px}.case-steps dt{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}.case-steps dd{margin:0;font-size:14px;color:var(--muted);line-height:1.55}
+.lp-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}.lp-grid .lp-card{grid-column:span 2}.lp-grid .lp-card:nth-child(4){grid-column:2/span 2}
+.lp-card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:20px}
+.lp-shots{display:grid;grid-template-columns:minmax(0,1fr) 31%;gap:12px}
+.lp-shot{position:relative;display:block;height:250px;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#f0f2f3;cursor:zoom-in}
+.lp-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .35s ease}.lp-shot:hover img{transform:scale(1.03)}
+.lp-shot:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.lp-label{position:absolute;left:10px;bottom:10px;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.94);color:var(--ink);font-size:11px;font-weight:700}
+.img-modal{width:min(900px,94vw);height:88vh;padding:0;border:0;border-radius:16px;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.35)}.img-modal::backdrop{background:rgba(23,35,33,.72)}
+.img-modal-body{height:calc(100% - 65px);overflow:auto;background:#f0f2f3;padding:16px}.img-modal-body img{display:block;margin:0 auto;max-width:100%;height:auto;border-radius:8px}
+.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.contact .btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55)}
+footer a{text-decoration:none}footer a:hover{color:var(--accent)}
+@media(max-width:980px){.lp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lp-grid .lp-card,.lp-grid .lp-card:nth-child(4){grid-column:auto}}@media(max-width:600px){.lp-grid{grid-template-columns:1fr}.lp-shot{height:240px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <nav><div class="brand">IGOR SOUZA<span style="color:var(--accent)">.</span></div>
-<div class="navlinks"><a href="#sobre">Sobre</a><a href="#bi">BI & Dados</a><a href="#digitais">Projetos digitais</a><a href="#competencias">Competências</a><a href="#contato">Contato</a></div></nav>
+<div class="navlinks"><a href="#sobre">Sobre</a><a href="#bi">BI & Dados</a><a href="#digitais">Landing pages</a><a href="#competencias">Competências</a><a href="#contato">Contato</a></div></nav>
 <header class="hero">
-<div><div class="eyebrow">Portfólio profissional · Marketing, dados & digital</div>
-<h1>Transformo dados e ideias em decisões e experiências.</h1>
-<p>Atuação entre Business Intelligence, marketing digital, performance e operações de e-commerce — conectando indicadores, comunicação e objetivos de negócio.</p>
-<div class="actions"><a class="btn" href="#bi">Explorar projetos</a><a class="btn secondary" href="https://wa.me/5544988583209?text=Ol%C3%A1%2C%20Igor%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Vamos conversar pelo WhatsApp ↗</a></div></div>
-<div class="hero-note">Projetos práticos em diferentes segmentos: varejo de moda, supermercado e serviços jurídicos. Uma visão que combina análise, organização e experiência digital.</div>
+<div><div class="eyebrow">Portfólio · E-commerce, dados e marketing</div>
+<h1>Dados de e‑commerce claros para decidir rápido.</h1>
+<p>Experiência com site próprio, marketplace e iFood. Monto dashboards no Looker Studio e landing pages pensadas para converter.</p>
+<div class="actions"><a class="btn" href="#bi">Ver projetos</a><a class="btn secondary" href="https://wa.me/5544988583209?text=Ol%C3%A1%2C%20Igor%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Conversar pelo WhatsApp ↗</a></div></div>
+<div class="hero-note">Os projetos usam dados fictícios, montados a partir de situações reais de trabalho em moda, supermercado e serviços.</div>
 </header>
 <section id="sobre">
-<div class="section-top"><div><div class="eyebrow">01 / Sobre</div><h2>Visão analítica com olhar de negócio.</h2></div><p>Experiência em rotinas de e-commerce, acompanhamento de indicadores, campanhas e melhoria de processos.</p></div>
-<div class="about-grid"><article class="about-card"><p>Sou profissional de Administração com experiência em e-commerce e marketing, atuando na gestão de plataformas, análise de desempenho, acompanhamento de KPIs e construção de materiais digitais. Gosto de transformar informações dispersas em visões claras para apoiar decisões.</p></article>
-<article class="about-card"><p>Meu trabalho transita entre o operacional e o estratégico: entender o que os números mostram, organizar processos e apresentar informações de forma objetiva para diferentes áreas.</p><div class="chips"><span class="chip">Business Intelligence</span><span class="chip">E-commerce</span><span class="chip">Marketing digital</span><span class="chip">Performance</span><span class="chip">Análise de dados</span></div></article></div>
+<div class="section-top"><div><div class="eyebrow">01 / Sobre</div><h2>Do operacional ao estratégico.</h2></div><p>Formado em Administração, com pós-graduação em Marketing Digital e Green Belt em Lean Six Sigma.</p></div>
+<div class="about-grid"><article class="about-card"><p>Trabalho com e-commerce desde a implantação de um marketplace numa concessionária de máquinas agrícolas. Depois cuidei do site de uma marca de moda, com catálogo, campanhas, trocas e relatórios para a diretoria, e da operação online de uma rede de supermercados com mais de 50 lojas no iFood.</p></article>
+<article class="about-card"><p>O que mais gosto de fazer: entender o que os números mostram, encontrar a causa do problema e levar isso de forma simples para quem decide. Foi assim que o motivo de devolução virou dado e mostrou por que as peças voltavam.</p><div class="chips"><span class="chip">E-commerce</span><span class="chip">Marketplace e iFood</span><span class="chip">Looker Studio</span><span class="chip">Indicadores</span><span class="chip">Melhoria contínua</span></div></article></div>
 </section>
 <section id="bi">
-<div class="section-top"><div><div class="eyebrow">02 / Business Intelligence</div><h2>Dados que ajudam a enxergar o todo.</h2></div><p>Dashboards desenvolvidos no Looker Studio para acompanhar indicadores, identificar oportunidades e apoiar a gestão.</p></div>
+<div class="section-top"><div><div class="eyebrow">02 / Business Intelligence</div><h2>Painéis que mostram onde agir.</h2></div><p>Dashboards no Looker Studio com dados fictícios, construídos a partir de problemas reais de operação.</p></div>
 <div class="project-grid">
-<article class="project"><div class="number">CASE 01</div><h3>Moda · Performance e vendas</h3><p>Painel para acompanhar tráfego pago, CRM, vendas e evolução dos resultados, conectando ações de marketing ao desempenho comercial.</p><div class="dashboard-shell"><button type="button" class="dash-poster" data-embed="https://datastudio.google.com/embed/reporting/e86edecd-8c5a-4be6-ad9c-904071d9623d/page/ELTCG" data-title="Moda · Performance e vendas" aria-label="Explorar o painel Moda · Performance e vendas"><img src="img/dash-moda.webp" width="763" height="500" loading="lazy" alt="Prévia do painel Moda · Performance e vendas no Looker Studio"><span class="dash-cta">Clique para explorar</span></button><span class="dashboard-watermark" aria-hidden="true">IGOR SOUZA · PORTFÓLIO</span></div><a href="https://datastudio.google.com/s/v72280vTZ-A" target="_blank" rel="noopener">Abrir dashboard ↗</a><div class="tagline">Looker Studio · Marketing & vendas</div></article>
-<article class="project"><div class="number">CASE 02</div><h3>Supermercado · Operação de marketplace</h3><p>Visão de vendas, pedidos, entregas e ocorrências operacionais, incluindo problemas de entrega e itens em falta.</p><div class="dashboard-shell"><button type="button" class="dash-poster" data-embed="https://datastudio.google.com/embed/reporting/a673e09f-b2b7-47b7-8d30-3926c16bb16c/page/TlJ0C" data-title="Supermercado · Operação de marketplace" aria-label="Explorar o painel Supermercado · Operação de marketplace"><img src="img/dash-supermercado.webp" width="763" height="500" loading="lazy" alt="Prévia do painel Supermercado · Operação de marketplace no Looker Studio"><span class="dash-cta">Clique para explorar</span></button><span class="dashboard-watermark" aria-hidden="true">IGOR SOUZA · PORTFÓLIO</span></div><a href="https://datastudio.google.com/s/u9i9ufwwCQA" target="_blank" rel="noopener">Abrir dashboard ↗</a><div class="tagline">Looker Studio · Operações</div></article>
-<article class="project"><div class="number">CASE 03</div><h3>Advocacia · Mídia e conversão</h3><p>Painel para acompanhar mídia paga, conversões e resultados por área de atuação, permitindo observar a contribuição de cada frente.</p><div class="dashboard-shell"><button type="button" class="dash-poster" data-embed="https://datastudio.google.com/embed/reporting/0234be36-ab75-43ec-ac84-e9a9bc528aa4/page/E4WCG" data-title="Advocacia · Mídia e conversão" aria-label="Explorar o painel Advocacia · Mídia e conversão"><img src="img/dash-advocacia.webp" width="763" height="500" loading="lazy" alt="Prévia do painel Advocacia · Mídia e conversão no Looker Studio"><span class="dash-cta">Clique para explorar</span></button><span class="dashboard-watermark" aria-hidden="true">IGOR SOUZA · PORTFÓLIO</span></div><a href="https://datastudio.google.com/s/uVpRtHjeyeo" target="_blank" rel="noopener">Abrir dashboard ↗</a><div class="tagline">Looker Studio · Aquisição & conversão</div></article>
+<article class="project"><div class="number">CASE 01</div><h3>Moda · Vendas e devoluções</h3>
+<dl class="case-steps"><div><dt>Desafio</dt><dd>Muita devolução sem motivo registrado, e um faturamento da plataforma que não batia com o do ERP.</dd></div><div><dt>O que o painel mostra</dt><dd>Venda líquida pelo ERP, valor devolvido por motivo e a evolução mês a mês.</dd></div><div><dt>Na prática</dt><dd>Com o motivo obrigatório, apareceram causas concretas, como um tecido que amarelava nas peças brancas e uma modelagem menor que o padrão.</dd></div></dl>
+<div class="dashboard-shell"><button type="button" class="dash-poster" data-embed="https://datastudio.google.com/embed/reporting/e86edecd-8c5a-4be6-ad9c-904071d9623d/page/ELTCG" data-title="Moda · Vendas e devoluções" aria-label="Explorar o painel Moda · Vendas e devoluções"><img src="img/dash-moda.webp" width="763" height="500" loading="lazy" alt="Prévia do painel Moda · Vendas e devoluções no Looker Studio"><span class="dash-cta">Clique para explorar</span></button><span class="dashboard-watermark" aria-hidden="true">IGOR SOUZA · PORTFÓLIO</span></div><a href="https://datastudio.google.com/s/v72280vTZ-A" target="_blank" rel="noopener">Abrir dashboard ↗</a><div class="tagline">Looker Studio · Vendas e pós-venda</div></article>
+<article class="project"><div class="number">CASE 02</div><h3>Supermercado · Operação no iFood</h3>
+<dl class="case-steps"><div><dt>Desafio</dt><dd>Dez lojas com resultados diferentes e pouca clareza sobre o que derrubava o pedido completo.</dd></div><div><dt>O que o painel mostra</dt><dd>Pedido 100%, cancelamento por loja e por mês, causas por área (loja, entregador, cliente, plataforma) e resposta às avaliações.</dd></div><div><dt>Na prática</dt><dd>Fica fácil ver qual loja puxa o cancelamento para cima e o efeito de eventos como uma greve de entregadores.</dd></div></dl>
+<div class="dashboard-shell"><button type="button" class="dash-poster" data-embed="https://datastudio.google.com/embed/reporting/a673e09f-b2b7-47b7-8d30-3926c16bb16c/page/TlJ0C" data-title="Supermercado · Operação no iFood" aria-label="Explorar o painel Supermercado · Operação no iFood"><img src="img/dash-supermercado.webp" width="763" height="500" loading="lazy" alt="Prévia do painel Supermercado · Operação no iFood no Looker Studio"><span class="dash-cta">Clique para explorar</span></button><span class="dashboard-watermark" aria-hidden="true">IGOR SOUZA · PORTFÓLIO</span></div><a href="https://datastudio.google.com/s/u9i9ufwwCQA" target="_blank" rel="noopener">Abrir dashboard ↗</a><div class="tagline">Looker Studio · Operação de marketplace</div></article>
+<article class="project"><div class="number">CASE 03</div><h3>Advocacia · Do clique ao cliente</h3>
+<dl class="case-steps"><div><dt>Desafio</dt><dd>Saber quanto custa cada cliente fechado e qual área dá mais retorno sobre a verba de mídia.</dd></div><div><dt>O que o painel mostra</dt><dd>O funil clique, contato no WhatsApp, atendimento e fechamento, com investimento e retorno por área.</dd></div><div><dt>Na prática</dt><dd>Mostra onde a verba rende mais e em que etapa do funil os contatos se perdem.</dd></div></dl>
+<div class="dashboard-shell"><button type="button" class="dash-poster" data-embed="https://datastudio.google.com/embed/reporting/0234be36-ab75-43ec-ac84-e9a9bc528aa4/page/E4WCG" data-title="Advocacia · Do clique ao cliente" aria-label="Explorar o painel Advocacia · Do clique ao cliente"><img src="img/dash-advocacia.webp" width="763" height="500" loading="lazy" alt="Prévia do painel Advocacia · Do clique ao cliente no Looker Studio"><span class="dash-cta">Clique para explorar</span></button><span class="dashboard-watermark" aria-hidden="true">IGOR SOUZA · PORTFÓLIO</span></div><a href="https://datastudio.google.com/s/uVpRtHjeyeo" target="_blank" rel="noopener">Abrir dashboard ↗</a><div class="tagline">Looker Studio · Aquisição e conversão</div></article>
 </div>
 <p class="tagline" style="margin-top:18px">Clique em um painel para explorá-lo aqui mesmo, ou use “Abrir dashboard” para vê-lo em uma nova aba.</p>
 </section>
 <section id="digitais">
-<div class="section-top"><div><div class="eyebrow">03 / Experiências digitais</div><h2>Landing pages pensadas para cada público.</h2></div><p>Um projeto para escritório de advocacia com cinco páginas segmentadas por área de atuação, apresentadas em versões desktop e mobile.</p></div>
-<p class="landing-intro">As páginas seguem uma estrutura orientada à conversão: proposta de valor, identificação das necessidades do público, chamadas para contato via WhatsApp, depoimentos, dúvidas frequentes e formulário de contato. O conjunto demonstra organização de conteúdo e adaptação responsiva entre telas.</p>
-<div class="landing-list">
-<article class="landing-card featured-landing-card">
-  <div class="landing-heading"><span>01</span><h3>Criminal e Previdenciário</h3></div>
-  <div class="landing-gallery"><figure class="mobile-shot"><img loading="lazy" src="img/lp-criminal-mobile.webp" width="390" height="3150" alt="Landing page Criminal — versão mobile"><figcaption>Criminal · Mobile @1x</figcaption></figure><figure class="mobile-shot"><img loading="lazy" src="img/lp-previdenciario-mobile.webp" width="390" height="3150" alt="Landing page Previdenciário — versão mobile"><figcaption>Previdenciário · Mobile @1x</figcaption></figure><figure class="desktop-shot"><img loading="lazy" src="img/lp-criminal-desktop.webp" width="750" height="1536" alt="Landing page Criminal — versão desktop"><figcaption>Criminal · Desktop @1x</figcaption></figure><figure class="desktop-shot"><img loading="lazy" src="img/lp-previdenciario-desktop.webp" width="750" height="1536" alt="Landing page Previdenciário — versão desktop"><figcaption>Previdenciário · Desktop @1x</figcaption></figure></div>
-</article>
-<article class="landing-card">
-        <div class="landing-heading"><span>02</span><h3>Família</h3></div>
-        <div class="screens">
-          <figure class="mobile-shot"><img loading="lazy" src="img/lp-familia-mobile.webp" width="390" height="3150" alt="Landing page Família — versão mobile"><figcaption>Mobile @1x</figcaption></figure>
-          <figure class="desktop-shot"><img loading="lazy" src="img/lp-familia-desktop.webp" width="750" height="1536" alt="Landing page Família — versão desktop"><figcaption>Desktop @1x</figcaption></figure>
-        </div>
-      </article>
-      
-
-<article class="landing-card">
-        <div class="landing-heading"><span>03</span><h3>Tributário</h3></div>
-        <div class="screens">
-          <figure class="mobile-shot"><img loading="lazy" src="img/lp-tributario-mobile.webp" width="390" height="3150" alt="Landing page Tributário — versão mobile"><figcaption>Mobile @1x</figcaption></figure>
-          <figure class="desktop-shot"><img loading="lazy" src="img/lp-tributario-desktop.webp" width="750" height="1536" alt="Landing page Tributário — versão desktop"><figcaption>Desktop @1x</figcaption></figure>
-        </div>
-      </article>
-      
-
-<article class="landing-card">
-        <div class="landing-heading"><span>04</span><h3>Renegociação de dívidas</h3></div>
-        <div class="screens">
-          <figure class="mobile-shot"><img loading="lazy" src="img/lp-dividas-mobile.webp" width="390" height="3150" alt="Landing page Renegociação de dívidas — versão mobile"><figcaption>Mobile @1x</figcaption></figure>
-          <figure class="desktop-shot"><img loading="lazy" src="img/lp-dividas-desktop.webp" width="750" height="1536" alt="Landing page Renegociação de dívidas — versão desktop"><figcaption>Desktop @1x</figcaption></figure>
-        </div>
-      </article></div>
+<div class="section-top"><div><div class="eyebrow">03 / Landing pages</div><h2>Uma página para cada público.</h2></div><p>Cinco páginas para um escritório de advocacia fictício, uma por área de atuação, no computador e no celular.</p></div>
+<p class="landing-intro">Cada página responde, em poucos blocos, o que a pessoa quer saber antes de chamar: é comigo? Quem vai me atender? Como eu falo? Cada problema da lista já abre o WhatsApp com a mensagem pronta. Clique em uma tela para ver a página inteira.</p>
+<div class="lp-grid">
+<article class="lp-card"><div class="landing-heading"><span>01</span><h3>Previdenciário</h3></div>
+<div class="lp-shots">
+<button type="button" class="lp-shot lp-shot-desktop" data-full="img/lp-previdenciario-desktop.webp" data-title="Previdenciário · computador" aria-label="Ver a página de Previdenciário inteira no computador"><img src="img/lp-previdenciario-desktop.webp" width="750" height="1536" loading="lazy" alt="Topo da landing page de Previdenciário no computador"><span class="lp-label">Computador</span></button>
+<button type="button" class="lp-shot lp-shot-mobile" data-full="img/lp-previdenciario-mobile.webp" data-title="Previdenciário · celular" aria-label="Ver a página de Previdenciário inteira no celular"><img src="img/lp-previdenciario-mobile.webp" width="390" height="3150" loading="lazy" alt="Topo da landing page de Previdenciário no celular"><span class="lp-label">Celular</span></button>
+</div></article>
+<article class="lp-card"><div class="landing-heading"><span>02</span><h3>Família</h3></div>
+<div class="lp-shots">
+<button type="button" class="lp-shot lp-shot-desktop" data-full="img/lp-familia-desktop.webp" data-title="Família · computador" aria-label="Ver a página de Família inteira no computador"><img src="img/lp-familia-desktop.webp" width="750" height="1536" loading="lazy" alt="Topo da landing page de Família no computador"><span class="lp-label">Computador</span></button>
+<button type="button" class="lp-shot lp-shot-mobile" data-full="img/lp-familia-mobile.webp" data-title="Família · celular" aria-label="Ver a página de Família inteira no celular"><img src="img/lp-familia-mobile.webp" width="390" height="3150" loading="lazy" alt="Topo da landing page de Família no celular"><span class="lp-label">Celular</span></button>
+</div></article>
+<article class="lp-card"><div class="landing-heading"><span>03</span><h3>Criminal</h3></div>
+<div class="lp-shots">
+<button type="button" class="lp-shot lp-shot-desktop" data-full="img/lp-criminal-desktop.webp" data-title="Criminal · computador" aria-label="Ver a página de Criminal inteira no computador"><img src="img/lp-criminal-desktop.webp" width="750" height="1536" loading="lazy" alt="Topo da landing page de Criminal no computador"><span class="lp-label">Computador</span></button>
+<button type="button" class="lp-shot lp-shot-mobile" data-full="img/lp-criminal-mobile.webp" data-title="Criminal · celular" aria-label="Ver a página de Criminal inteira no celular"><img src="img/lp-criminal-mobile.webp" width="390" height="3150" loading="lazy" alt="Topo da landing page de Criminal no celular"><span class="lp-label">Celular</span></button>
+</div></article>
+<article class="lp-card"><div class="landing-heading"><span>04</span><h3>Tributário</h3></div>
+<div class="lp-shots">
+<button type="button" class="lp-shot lp-shot-desktop" data-full="img/lp-tributario-desktop.webp" data-title="Tributário · computador" aria-label="Ver a página de Tributário inteira no computador"><img src="img/lp-tributario-desktop.webp" width="750" height="1536" loading="lazy" alt="Topo da landing page de Tributário no computador"><span class="lp-label">Computador</span></button>
+<button type="button" class="lp-shot lp-shot-mobile" data-full="img/lp-tributario-mobile.webp" data-title="Tributário · celular" aria-label="Ver a página de Tributário inteira no celular"><img src="img/lp-tributario-mobile.webp" width="390" height="3150" loading="lazy" alt="Topo da landing page de Tributário no celular"><span class="lp-label">Celular</span></button>
+</div></article>
+<article class="lp-card"><div class="landing-heading"><span>05</span><h3>Dívidas e renegociação</h3></div>
+<div class="lp-shots">
+<button type="button" class="lp-shot lp-shot-desktop" data-full="img/lp-dividas-desktop.webp" data-title="Dívidas e renegociação · computador" aria-label="Ver a página de Dívidas e renegociação inteira no computador"><img src="img/lp-dividas-desktop.webp" width="750" height="1536" loading="lazy" alt="Topo da landing page de Dívidas e renegociação no computador"><span class="lp-label">Computador</span></button>
+<button type="button" class="lp-shot lp-shot-mobile" data-full="img/lp-dividas-mobile.webp" data-title="Dívidas e renegociação · celular" aria-label="Ver a página de Dívidas e renegociação inteira no celular"><img src="img/lp-dividas-mobile.webp" width="390" height="3150" loading="lazy" alt="Topo da landing page de Dívidas e renegociação no celular"><span class="lp-label">Celular</span></button>
+</div></article>
+</div>
 </section>
 <section id="competencias">
 <div class="section-top"><div><div class="eyebrow">04 / Competências</div><h2>Ferramentas e frentes de atuação.</h2></div></div>
@@ -147,9 +165,9 @@ img{-webkit-user-drag:none;user-select:none}
 </div>
 </section>
 <section id="contato">
-<div class="contact"><div><div class="eyebrow" style="color:#a8c7bd">Vamos conversar</div><h2>Tem um projeto ou oportunidade?</h2><p>Tem um projeto em mente ou busca um profissional para sua equipe? Vamos conversar pelo WhatsApp.</p></div><a class="btn" href="https://wa.me/5544988583209?text=Ol%C3%A1%2C%20Igor%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Chamar no WhatsApp ↗</a></div>
+<div class="contact"><div><div class="eyebrow" style="color:#a8c7bd">Vamos conversar</div><h2>Tem um projeto, um freela ou uma vaga?</h2><p>Me chame pelo WhatsApp ou pelo LinkedIn. Respondo assim que puder.</p></div><div class="contact-actions"><a class="btn" href="https://wa.me/5544988583209?text=Ol%C3%A1%2C%20Igor%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp ↗</a><a class="btn ghost" href="https://www.linkedin.com/in/igor-souza-a96a00195" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>
 </section>
-<footer><span>© 2026 Igor Souza · Portfólio profissional</span><span>Business Intelligence · Marketing · Digital</span></footer>
+<footer><span>© 2026 Igor Souza · Portfólio profissional · Maringá-PR</span><span><a href="https://www.linkedin.com/in/igor-souza-a96a00195" target="_blank" rel="noopener">LinkedIn</a> · E-commerce · Dados · Marketing</span></footer>
 </div>
 
 <script>
@@ -188,6 +206,21 @@ document.addEventListener('keydown', function (event) {
   document.getElementById('dashModalClose').addEventListener('click',fechar);
   modal.addEventListener('click',function(e){if(e.target===modal)fechar();});
   modal.addEventListener('close',function(){frame.src='about:blank';});
+})();
+</script>
+
+<dialog class="img-modal" id="imgModal" aria-label="Página completa">
+<div class="dash-modal-bar"><span id="imgModalTitle">Página</span><button type="button" class="dash-modal-close" id="imgModalClose" aria-label="Fechar">×</button></div>
+<div class="img-modal-body"><img id="imgModalImg" alt=""></div>
+</dialog>
+<script>
+(function(){
+  var m=document.getElementById('imgModal'), img=document.getElementById('imgModalImg'), t=document.getElementById('imgModalTitle');
+  document.querySelectorAll('.lp-shot').forEach(function(b){
+    b.addEventListener('click',function(){ t.textContent=b.dataset.title; img.src=b.dataset.full; img.alt='Landing page '+b.dataset.title+', página inteira'; img.style.width=b.classList.contains('lp-shot-mobile')?'390px':'100%'; if(m.showModal){m.showModal(); m.querySelector('.img-modal-body').scrollTop=0;} else {window.open(b.dataset.full,'_blank');} });
+  });
+  document.getElementById('imgModalClose').addEventListener('click',function(){m.close();});
+  m.addEventListener('click',function(e){if(e.target===m)m.close();});
 })();
 </script>
 
