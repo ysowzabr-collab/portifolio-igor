@@ -15,7 +15,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-:root{--ink:#1c2430;--muted:#657080;--paper:#f7f8fa;--white:#fff;--accent:#275b55;--line:#e3e7eb;--soft:#eaf1ef}
+:root{--ink:#1c2430;--muted:#4d5866;--paper:#f7f8fa;--white:#fff;--accent:#275b55;--line:#d5dce1;--soft:#eaf1ef}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
 a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
 nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}.brand{font-weight:750;letter-spacing:-.04em}.navlinks{display:flex;gap:22px;font-size:13px;color:var(--muted)}.navlinks a{text-decoration:none}
@@ -89,6 +89,19 @@ img{-webkit-user-drag:none;user-select:none}
 .contact-actions{display:flex;gap:10px;flex-wrap:wrap}.contact .btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55)}
 footer a{text-decoration:none}footer a:hover{color:var(--accent)}
 @media(max-width:980px){.lp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lp-grid .lp-card,.lp-grid .lp-card:nth-child(4){grid-column:auto}}@media(max-width:600px){.lp-grid{grid-template-columns:1fr}.lp-shot{height:240px}}
+
+/* Rodada 3: mais contraste — topo escuro com painel, seção de dashboards em verde claro */
+.hero{margin-top:22px;padding:64px 56px;border-radius:24px;background:#172321;color:#fff;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}
+.hero .eyebrow{color:#a8c7bd}.hero h1{color:#fff}.hero p{color:#c5d2ce}
+.hero .btn{background:#fff;color:#172321}.hero .btn.secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.hero-side{display:grid;gap:14px}
+.hero-shot{margin:0;border:0;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.hero .hero-note{border-left-color:#a8c7bd;color:#c5d2ce;padding:6px 0 6px 16px;font-size:13px}
+#bi{background:#eaf1ef;border-top:0;border-radius:24px;padding:56px 40px;margin:12px 0}
+#bi + section{border-top:0}
+.about-card,.project,.skill-card,.lp-card{border-color:var(--line)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:44px 28px}#bi{padding:44px 20px}}
+@media(max-width:560px){.hero{padding:36px 20px;border-radius:18px;margin-top:14px}}
 </style>
 </head>
 <body>
@@ -100,7 +113,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--accent)}
 <h1>Dados de e‑commerce claros para decidir rápido.</h1>
 <p>Experiência com site próprio, marketplace e iFood. Monto dashboards no Looker Studio e landing pages pensadas para converter.</p>
 <div class="actions"><a class="btn" href="#bi">Ver projetos</a><a class="btn secondary" href="https://wa.me/5544988583209?text=Ol%C3%A1%2C%20Igor%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Conversar pelo WhatsApp ↗</a></div></div>
-<div class="hero-note">Os projetos usam dados fictícios, montados a partir de situações reais de trabalho em moda, supermercado e serviços.</div>
+<div class="hero-side"><button type="button" class="hero-shot dash-poster" data-embed="https://datastudio.google.com/embed/reporting/a673e09f-b2b7-47b7-8d30-3926c16bb16c/page/TlJ0C" data-title="Supermercado · Operação no iFood" aria-label="Explorar o painel Supermercado · Operação no iFood"><img src="img/dash-supermercado.webp" width="763" height="500" alt="Painel de operação de supermercado no iFood, feito no Looker Studio"><span class="dash-cta">Clique para explorar</span></button><div class="hero-note">Os projetos usam dados fictícios, montados a partir de situações reais de trabalho em moda, supermercado e serviços.</div></div>
 </header>
 <section id="sobre">
 <div class="section-top"><div><div class="eyebrow">01 / Sobre</div><h2>Do operacional ao estratégico.</h2></div><p>Formado em Administração, com pós-graduação em Marketing Digital e Green Belt em Lean Six Sigma.</p></div>
